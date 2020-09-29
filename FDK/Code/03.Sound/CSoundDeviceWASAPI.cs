@@ -293,7 +293,6 @@ namespace FDK
 			}
 		#endregion
 
-		Retry:
 			var flags = (mode == Eデバイスモード.排他) ?
 				BASSWASAPIInit.BASS_WASAPI_AUTOFORMAT | BASSWASAPIInit.BASS_WASAPI_EXCLUSIVE :
 				BASSWASAPIInit.BASS_WASAPI_AUTOFORMAT | BASSWASAPIInit.BASS_WASAPI_SHARED;  // 注: BASS_WASAPI_SHARED==0 なので、SHAREDの指定は意味なし

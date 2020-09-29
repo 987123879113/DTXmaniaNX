@@ -816,7 +816,7 @@ namespace DTXMania
                                     //if( this.txフィルインエフェクト[ this.stFillIn[ i ].ctUpdate.nCurrentValue ] != null )
                                     //    this.txフィルインエフェクト[ this.stFillIn[ i ].ctUpdate.nCurrentValue ].tDraw2D( CDTXMania.app.Device, 0, 0 );
                                     }
-                                    catch( Exception ex )
+                                    catch
                                     {
                                     }
                                 }

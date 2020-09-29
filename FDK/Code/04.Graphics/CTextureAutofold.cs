@@ -209,7 +209,7 @@ namespace FDK
 		/// <param name="device">Direct3D9 デバイス。</param>
 		/// <param name="x">描画位置（テクスチャの左上位置の X 座標[dot]）。</param>
 		/// <param name="y">描画位置（テクスチャの左上位置の Y 座標[dot]）。</param>
-		public new void t2D描画( Device device, int x, int y )
+		public void t2D描画( Device device, int x, int y )
 		{
 #if TEST_FOLDTEXTURE
 			base.t2D描画( device, x, y, 1f, rc全画像 );
@@ -232,7 +232,7 @@ namespace FDK
 			}
 #endif
 		}
-		public new void t2D描画( Device device, int x, int y, Rectangle rc )
+		public void t2D描画( Device device, int x, int y, Rectangle rc )
 		{
 			Rectangle r;
 			if ( b横長のテクスチャである )
@@ -279,11 +279,11 @@ namespace FDK
 			}
 
 		}
-		public new void t2D描画( Device device, float x, float y )
+		public void t2D描画( Device device, float x, float y )
 		{
 			t2D描画( device, (int) x, (int) y );
 		}
-		public new void t2D描画( Device device, float x, float y, Rectangle rc )
+		public void t2D描画( Device device, float x, float y, Rectangle rc )
 		{
 			t2D描画( device, (int) x, (int) y, rc );
 		}

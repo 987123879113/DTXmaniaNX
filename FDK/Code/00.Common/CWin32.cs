@@ -624,8 +624,10 @@ namespace FDK
 			public byte HiberFileType;          // Ignore if earlier than Windows 10 (10.0.10240.0)
 			[MarshalAs(UnmanagedType.U1)]
 			public bool AoAcConnectivitySupported;  // Ignore if earlier than Windows 10 (10.0.10240.0)
+#pragma warning disable 0169
 			[MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)]
 			private readonly byte[] spare3;
+#pragma warning restore 0169
 			[MarshalAs(UnmanagedType.U1)]
 			public bool SystemBatteriesPresent;
 			[MarshalAs(UnmanagedType.U1)]
